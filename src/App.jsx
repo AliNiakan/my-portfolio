@@ -1,18 +1,15 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Home from "./pages/Home"
-import NotFound from "./pages/NotFound"
-function App() {
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
+function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
