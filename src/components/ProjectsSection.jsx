@@ -1,11 +1,15 @@
 import { ArrowRight, Github } from 'lucide-react'
+import ShoeShopImage from "../../public/projects/shoeshop.webp";
+import QuizMakerImage from "../../public/projects/quizmaker.webp";
+import LyricFinderImage from "../../public/projects/lyricfinder.webp";
+
 
 const projects = [
   {
     id: 1,
     title: "Shoe Shop",
     description: "This project is a website for buying shoes, It allows users to view some information about shoes, and add them to their shopping list.",
-    image: "/projects/shoeshop.webp",
+    image: ShoeShopImage,
     tags: ['HTML/CSS', 'JavaScript', 'React', 'TypeScript'],
     githubUrl: "https://github.com/AliNiakan/shoe-shop"
   },
@@ -13,14 +17,14 @@ const projects = [
     id: 2,
     title: "Quiz Maker",
     description: "A movie search app to share your favorite movies with your friend, built with React.",
-    image: "/projects/quizmaker.webp",
+    image: QuizMakerImage,
     tags: ['HTML/CSS', 'JavaScript', 'React', 'Bootstrap'],
     githubUrl: "https://github.com/AliNiakan/quiz-maker"
   }, {
     id: 3,
     title: "Lyric finder",
     description: "Search, view, and explore song lyrics. It fetches data from Genius and provides an AI-powered overview for each song. ",
-    image: "/projects/lyricfinder.webp",
+    image: LyricFinderImage,
     tags: ['HTML/CSS', 'JavaScript', 'React', 'Vite', 'TailwindCSS'],
     githubUrl: "https://github.com/AliNiakan/lyric-finder"
   }
